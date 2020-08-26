@@ -1,0 +1,27 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<title>Iroqwa.org Packages</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<link rel="stylesheet" href="https://cdn.iroqwa.org/bootstrap-3.3.6/css/bootstrap.min.css"/>
+</head>
+<body>
+<h1>Iroqwa.org Packages</h1>
+
+<p>
+This is <a href="mailto:gui@iroqwa.org">my</a> Debian packages repository. Feel free to use them and drop me an email :)<br/><br/>
+
+To use this repository:<br/>
+<pre>
+echo "deb http://debian.iroqwa.org/ jessie main" | sudo tee /etc/apt/sources.list.d/iroqwa.list
+sudo wget http://debian.iroqwa.org/iroqwa.org.gpg.key --output-document=- | apt-key add -
+sudo apt-get update
+sudo apt-get install package
+</pre>
+
+Available packages:
+<!--#include file="packages.html" -->
+</p>
+</body>
+</html>
